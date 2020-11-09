@@ -80,7 +80,7 @@ public class qlChuyenMuc extends HttpServlet {
 				break;
 				case "update":
 					ChuyenMucDAO.update_ChuyenMuc(new ChuyenMuc(tenDanhMuc,ma_CM));
-					url = "/ChuyenMucQL";
+					url = "/admin/ChuyenMucQL";
 					break;
 				}
 			}

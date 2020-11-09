@@ -15,7 +15,7 @@
 <%--		<li><a href="KhoHangQL">Kho Hàng</a></li>--%>
 <%--		<li><a href="DonHangQL">Đơn Hàng</a></li>--%>
 <%--		<li><a href="ChiTietDonHangQL">Chi Tiết ĐH</a></li>--%>
-<%--		<li><a href="TaiKhoanQL">Tài Khoản</a></li>--%>
+		<li><a href="TaiKhoanQL">Tài Khoản</a></li>
 <%--		<li><a href="SlidebannerQL">Slidebanner</a></li>--%>
 <%--		<li><a href="SlidebannerlogoQL">Slidebannerlogo</a></li>--%>
 <%--		--%>

@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 
 
 
-@WebServlet(urlPatterns = "/qlSanPham")
+@WebServlet(urlPatterns = "/admin/qlSanPham")
 public class qlSanPham extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

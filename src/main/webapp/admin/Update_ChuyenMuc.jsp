@@ -40,7 +40,7 @@ if(session.getAttribute("error")!=null)
 			
 			<tr>
 				<td style = "float: right;"><b>Tên danh mục: </b>
-				</td><td><input type="text" class="sedang" name="tenDanhMuc"></td>
+				</td><td><input type="text" class="sedang" name="tenDanhMuc" value="<%= request.getParameter("tenDanhMuc") %>"></td>
 			</tr>
 			
 			<tr><td></td><td>

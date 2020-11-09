@@ -32,13 +32,13 @@ public static ArrayList<ChuyenMuc> getListChuyenMuc() {
     return list;
 }
 //Thêm mới dữ liệu
-public static boolean insert_ChuyenMuc(ChuyenMuc c) throws SQLException {
+public static boolean insert_ChuyenMuc(ChuyenMuc chuyenMuc) throws SQLException {
  try {
       Connection connection = DBConnect.CreateConnection();
       String sql = "INSERT INTO categories VALUE(?,?)";
       PreparedStatement ps = connection.prepareCall(sql);
-      ps.setString(1, c.getMaCM());
-      ps.setString(2, c.getTenCM());
+      ps.setString(1, chuyenMuc.getMaCM());
+      ps.setString(2, chuyenMuc.getTenCM());
       int temp = ps.executeUpdate();
       return temp == 1;
  } catch (Exception e) {
@@ -47,13 +47,13 @@ public static boolean insert_ChuyenMuc(ChuyenMuc c) throws SQLException {
 }
 
 //cập nhật
-public static boolean update_ChuyenMuc(ChuyenMuc c) throws SQLException {
+public static boolean update_ChuyenMuc(ChuyenMuc chuyenMuc) throws SQLException {
  try {
       Connection connection = DBConnect.CreateConnection();
       String sql = "UPDATE categories SET categories_name = ? WHERE categories_id = ?";
       PreparedStatement ps = connection.prepareCall(sql);
-      ps.setString(1, c.getTenCM());
-      ps.setString(2, c.getMaCM());
+      ps.setString(1, chuyenMuc.getTenCM());
+      ps.setString(2, chuyenMuc.getMaCM());
       int temp = ps.executeUpdate();
       return temp == 1;
  } catch (Exception e) {

@@ -10,19 +10,29 @@ model/SanPham.java
  model.SanPham
 model/ChuyenMuc.java
  model.ChuyenMuc
-dao/ChuyenMucDAO.java
- dao.ChuyenMucDAO
-controller/addSanPham.java
- controller.addSanPham
 controller/Update_ChuyenMuc.java
  controller.Update_ChuyenMuc
+controller/addSanPham.java
+ controller.addSanPham
+controller/qlSanPham.java
+ controller.qlSanPham
 controller/Update_SanPham.java
  controller.Update_SanPham
 controller/addChuyenMuc.java
  controller.addChuyenMuc
 dao/SanPhamDAO.java
  dao.SanPhamDAO
-controller/qlSanPham.java
- controller.qlSanPham
+dao/ChuyenMucDAO.java
+ dao.ChuyenMucDAO
 controller/qlChuyenMuc.java
  controller.qlChuyenMuc
+dao/TaiKhoanDAO.java
+ dao.TaiKhoanDAO
+controller/TaiKhoanQL.java
+ controller.TaiKhoanQL
+controller/qlTaiKhoan.java
+ controller.qlTaiKhoan
+controller/addTaiKhoan.java
+ controller.addTaiKhoan
+controller/Update_TaiKhoan.java
+ controller.Update_TaiKhoan
