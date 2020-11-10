@@ -28,11 +28,11 @@
 	<jsp:include page="menu.jsp"></jsp:include>
 	<!-- memnu -->
 	<div id="rightContent">
-	<h3>Tabel</h3>
+	<h3>Tài Khoản</h3>
 	<a href = "addTaiKhoan">Thêm tài khoản</a>
 		<table class="data">
 			<tr class="data">
-				<th class="data" width="30px">STT</th>
+
 				<th class="data">ID</th>
 				<th class="data">Tên Đăng Nhập</th>
 				<th class="data">Mật Khẩu</th>
@@ -47,7 +47,7 @@
 								%>
 				<tr class="data">
 				<td class="data" width="30px"><%=i++%></td>
-				<td class="data"><%=tk.getID()%></td>
+<%--				<td class="data"><%=tk.getID()%></td>--%>
 				<td class="data"><%=tk.getUserEmail() %></td>
 				<td class="data"><%=tk.getPass()%></td>
 				<td class="data"><%=tk.getHoTen()%></td>

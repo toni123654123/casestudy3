@@ -11,8 +11,9 @@ public class TaiKhoan
 	private int PhanLoai;
 	public TaiKhoan() {}
 
-	public TaiKhoan(int iD, String userEmail, String pass, String hoTen, String gioiTinh, String sDT, int phanLoai) {
-		ID = iD;
+
+	public TaiKhoan( String userEmail, String pass, String hoTen, String gioiTinh, String sDT, int phanLoai) {
+
 		UserEmail = userEmail;
 		Pass = pass;
 		HoTen = hoTen;

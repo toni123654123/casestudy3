@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(urlPatterns = "/admin/ChuyenMucQL")
+@WebServlet(urlPatterns = "/ChuyenMucQL")
 public class ChuyenMucQL extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

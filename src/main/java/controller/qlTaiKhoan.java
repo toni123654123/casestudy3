@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 
 
 
-@WebServlet(urlPatterns = "/admin/qlTaiKhoan")
+@WebServlet(urlPatterns = "/qlTaiKhoan")
 public class qlTaiKhoan extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -43,7 +43,7 @@ public class qlTaiKhoan extends HttpServlet {
 				switch (command) {
 				case "delete":
 					TaiKhoanDAO.delete_TaiKhoan(Integer.parseInt(ID));
-					url = "/admin/TaiKhoanQL";
+					url = "/TaiKhoanQL";
 					break;
 				}
 			
@@ -61,7 +61,7 @@ public class qlTaiKhoan extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 	    request.setCharacterEncoding("UTF-8");
 		String command = request.getParameter("command");
-		String ID = request.getParameter("ID");
+//		String ID = request.getParameter("ID");
 		String UserEmail = request.getParameter("UserEmail");
 		String Pass = request.getParameter("Pass");
 		String HoTen = request.getParameter("HoTen");
@@ -78,12 +78,12 @@ public class qlTaiKhoan extends HttpServlet {
 		try  {
 				switch (command) {
 				case "insert":
-				TaiKhoanDAO.insert_TaiKhoan(new TaiKhoan(Integer.parseInt(ID),UserEmail,Pass,HoTen,GioiTinh,SDT,Integer.parseInt(PhanLoai)));
-				url = "/admin/TaiKhoanQL";
+				TaiKhoanDAO.insert_TaiKhoan(new TaiKhoan(UserEmail,Pass,HoTen,GioiTinh,SDT,Integer.parseInt(PhanLoai)));
+				url = "/TaiKhoanQL";
 				break;
 				case "update":
-					TaiKhoanDAO.update_TaiKhoan(new TaiKhoan(Integer.parseInt(ID),UserEmail,Pass,HoTen,GioiTinh,SDT,Integer.parseInt(PhanLoai)));
-					url = "/admin/TaiKhoanQL";
+					TaiKhoanDAO.update_TaiKhoan(new TaiKhoan(UserEmail,Pass,HoTen,GioiTinh,SDT,Integer.parseInt(PhanLoai)));
+					url = "/TaiKhoanQL";
 					break;
 				}
 			}

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-@WebServlet(urlPatterns = "/admin/Update_ChuyenMuc")
+@WebServlet(urlPatterns = "/Update_ChuyenMuc")
 public class Update_ChuyenMuc extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -27,7 +27,7 @@ public class Update_ChuyenMuc extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd =request.getRequestDispatcher("Update_ChuyenMuc.jsp");
+		RequestDispatcher rd =request.getRequestDispatcher("/admin/Update_ChuyenMuc.jsp");
 		rd.forward(request, response);
 		response.setContentType("text/html;charset=UTF-8");
 	    request.setCharacterEncoding("UTF-8");

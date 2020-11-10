@@ -2,6 +2,7 @@
 <%@ page import="dao.ChuyenMucDAO" %>
 <%@ page language="java" contentType="text/html; charset=utf-8"
          pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +25,7 @@
         s = (String) session.getAttribute("error");
     }
 %>
+
 <!-- header -->
 <jsp:include page="header.jsp"></jsp:include>
 <!-- header -->
@@ -38,15 +40,15 @@
         <form action="qlSanPham" method="POST">
 
             <table width="95%">
-                <tr>
-                    <td style="float: right;"><b>Mã Sản phẩm: </b>
-                    </td>
-                    <td><input type="text" class="sedang" name="MaSP"></td>
-                </tr>
+<%--                <tr>--%>
+<%--                    <td style="float: right;"><b>Mã Sản phẩm: </b>--%>
+<%--                    </td>--%>
+<%--                    <td><input type="text" class="sedang" name="MaSP"></td>--%>
+<%--                </tr>--%>
                 <tr>
                     <td style="float: right;"><b>Tên Sản Phẩm: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="TenSP"></td>
+                    <td><input type="text" class="sedang" name="TenSP" value= <%=request.getParameter("TenSP")%>></td>
                 </tr>
                 <tr>
                     <td style="float: right;"><b>Mã Chuyên Mục: </b>
@@ -64,16 +66,19 @@
                 <tr>
                     <td style="float: right;"><b>Giá: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="Gia"></td>
+                    <td><input type="text" class="sedang" name="Gia" value= <%=request.getParameter("Gia")%>></td>
                 </tr>
                 <tr>
                     <td style="float: right;"><b>Hình Ảnh: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="HinhAnh"></td>
+                    <td><input type="text" class="sedang" name="HinhAnh" value= <%=request.getParameter("HinhAnh")%>></td>
                 </tr>
                 <tr>
                     <td>
                         <input type="hidden" name="command" value="update">
+<%--                        <c:if test="${sp !=null}">--%>
+<%--                            <input type="hidden" name="MaSP" value="<c:out value='${sp.MaSP}' />"/>--%>
+<%--                        </c:if>--%>
                         <input type="hidden" name="MaSP" value= <%=request.getParameter("MaSP")%>>
                         <input type="submit" class="button" value="Lưu dữ liệu">
                     </td>

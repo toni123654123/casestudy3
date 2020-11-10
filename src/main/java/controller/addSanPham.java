@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(urlPatterns = "/admin/addSanPham")
+@WebServlet(urlPatterns = "/addSanPham")
 public class addSanPham extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

@@ -19,7 +19,15 @@ public class SanPham{
 		HinhAnh = hinhAnh;
 	}
 
-	public String getMaSP() {
+    public SanPham(String maSP, String tenSP, String maCM, String gia, String hinhAnh) {
+		MaSP = maSP;
+		TenSP = tenSP;
+		MaCM = maCM;
+		Gia = Long.parseLong(gia);
+		HinhAnh = hinhAnh;
+    }
+
+    public String getMaSP() {
 		return MaSP;
 	}
 

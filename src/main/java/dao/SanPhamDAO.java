@@ -4,6 +4,11 @@ package dao;
 import db.DBConnect;
 import model.SanPham;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -108,6 +113,57 @@ try {
     return false;
 }
 }
+//public boolean update_SanPham(SanPham sp) throws SQLException {
+//    boolean temp;
+//        Connection connection = DBConnect.CreateConnection();
+//        String sql = "UPDATE product SET product_name = ? ,categories_id=?, pince=?,image=? WHERE product_id = ?";
+//        PreparedStatement ps = connection.prepareCall(sql);
+//        ps.setString(1, sp.getTenSP());
+//        ps.setString(2, sp.getMaCM());
+//        ps.setLong(3, sp.getGia());
+//        ps.setString(4, sp.getHinhAnh());
+//        ps.setString(5, sp.getMaSP());
+//        temp = ps.executeUpdate()>0;
+//         return temp;
+
+//}
+
+//    private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
+//        int id = Integer.parseInt(request.getParameter("id"));
+//        SanPham existingUser = SanPhamDAO.selectUser(id);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("Update_SanPham");
+//        request.setAttribute("user",existingUser);
+//        try {
+//            dispatcher.forward(request,response);
+//        } catch (ServletException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//    public static SanPham selectUser(int id) {
+//        SanPham sp = null;
+//
+//        Connection connection = DBConnect.CreateConnection();
+//        String sql = "UPDATE product SET product_name = ? ,categories_id=?, pince=?,image=? WHERE product_id = ?";
+//        try {
+//            PreparedStatement ps = connection.prepareStatement(sql);
+//            ps.setInt(1, id);
+//            System.out.println(ps);
+//            ResultSet rs = ps.executeQuery();
+//            while (rs.next()) {
+//                String MaSP = rs.getString("MaSP");
+//                String TenSP = rs.getString("TenSP");
+//                String MaCM = rs.getString("MaCM");
+//                long Gia = rs.getLong("Gia");
+//                String HinhAnh = rs.getString("HinhAnh");
+//                sp = new SanPham(MaSP, TenSP, MaCM,Gia, HinhAnh);
+//            }
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        return sp;
+//    }
 
 //xóa
 public static boolean delete_SanPham(String MaSP) throws SQLException {

@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 
 
 
-@WebServlet(urlPatterns = "/admin/qlChuyenMuc")
+@WebServlet(urlPatterns = "/qlChuyenMuc")
 public class qlChuyenMuc extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -44,7 +44,7 @@ public class qlChuyenMuc extends HttpServlet {
 				switch (command) {
 				case "delete":
 					ChuyenMucDAO.delete_ChuyenMuc(ma_CM);
-					url = "/admin/ChuyenMucQL";
+					url = "/ChuyenMucQL";
 					break;
 				}
 			
@@ -76,11 +76,11 @@ public class qlChuyenMuc extends HttpServlet {
 				switch (command) {
 				case "insert":
 				ChuyenMucDAO.insert_ChuyenMuc(new ChuyenMuc(maDanhMuc, tenDanhMuc));
-				url = "/admin/ChuyenMucQL";
+				url = "/ChuyenMucQL";
 				break;
 				case "update":
 					ChuyenMucDAO.update_ChuyenMuc(new ChuyenMuc(tenDanhMuc,ma_CM));
-					url = "/admin/ChuyenMucQL";
+					url = "/ChuyenMucQL";
 					break;
 				}
 			}
