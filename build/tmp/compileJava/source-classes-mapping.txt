@@ -1,76 +1,76 @@
-model/Cart.java
- model.Cart
-controller/ChuyenMucQL.java
- controller.ChuyenMucQL
-controller/CartController.java
- controller.CartController
-controller/indexql.java
- controller.indexql
-controller/TaiKhoanQL.java
- controller.TaiKhoanQL
-model/SanPham.java
- model.SanPham
-dao/TaiKhoanDAO.java
- dao.TaiKhoanDAO
-dao/ChiTietDonHangDAO.java
- dao.ChiTietDonHangDAO
-controller/ChiTietDonHangQL.java
- controller.ChiTietDonHangQL
-controller/HomeForward.java
- controller.HomeForward
-controller/SanPhamQL.java
- controller.SanPhamQL
+controller/addSanPham.java
+ controller.addSanPham
 controller/updateSanPham.java
  controller.updateSanPham
+controller/updateChuyenMuc.java
+ controller.updateChuyenMuc
+controller/ChuyenMucQL.java
+ controller.ChuyenMucQL
+dao/SanPhamDAO.java
+ dao.SanPhamDAO
+dao/KhoHangDAO.java
+ dao.KhoHangDAO
+model/Cart.java
+ model.Cart
+model/KhoHang.java
+ model.KhoHang
+controller/CartController.java
+ controller.CartController
+controller/HomeAdmin.java
+ controller.HomeAdmin
+controller/addChuyenMuc.java
+ controller.addChuyenMuc
+controller/HomeForward.java
+ controller.HomeForward
+controller/qlChuyenMuc.java
+ controller.qlChuyenMuc
+model/DonHang.java
+ model.DonHang
+controller/SanPhamQL.java
+ controller.SanPhamQL
+controller/TaiKhoanQL.java
+ controller.TaiKhoanQL
 dao/ChuyenMucDAO.java
  dao.ChuyenMucDAO
 model/ChiTietDonHang.java
  model.ChiTietDonHang
-controller/RegisterController.java
- controller.RegisterController
-dao/SanPhamDAO.java
- dao.SanPhamDAO
-model/DonHang.java
- model.DonHang
-controller/updateTaiKhoan.java
- controller.updateTaiKhoan
+model/Items.java
+ model.Items
+controller/addTaiKhoan.java
+ controller.addTaiKhoan
+controller/qlSanPham.java
+ controller.qlSanPham
+controller/ChiTietDonHangQL.java
+ controller.ChiTietDonHangQL
 controller/DonHangQL.java
  controller.DonHangQL
 db/DBConnect.java
  db.DBConnect
-controller/CheckEmailController.java
- controller.CheckEmailController
-controller/Update_Info.java
- controller.Update_Info
-dao/DonHangDAO.java
- dao.DonHangDAO
+model/SanPham.java
+ model.SanPham
 controller/KhoHangQL.java
  controller.KhoHangQL
 model/ChuyenMuc.java
  model.ChuyenMuc
-model/TaiKhoan.java
- model.TaiKhoan
-model/KhoHang.java
- model.KhoHang
-controller/updateChuyenMuc.java
- controller.updateChuyenMuc
-dao/KhoHangDAO.java
- dao.KhoHangDAO
 controller/CheckoutController.java
  controller.CheckoutController
+model/TaiKhoan.java
+ model.TaiKhoan
+dao/DonHangDAO.java
+ dao.DonHangDAO
 controller/LoginController.java
  controller.LoginController
-model/Items.java
- model.Items
-controller/addSanPham.java
- controller.addSanPham
-controller/qlSanPham.java
- controller.qlSanPham
-controller/addChuyenMuc.java
- controller.addChuyenMuc
+controller/updateTaiKhoan.java
+ controller.updateTaiKhoan
+dao/ChiTietDonHangDAO.java
+ dao.ChiTietDonHangDAO
+controller/updateInfo.java
+ controller.updateInfo
 controller/qlTaiKhoan.java
  controller.qlTaiKhoan
-controller/addTaiKhoan.java
- controller.addTaiKhoan
-controller/qlChuyenMuc.java
- controller.qlChuyenMuc
+controller/RegisterController.java
+ controller.RegisterController
+controller/CheckEmailController.java
+ controller.CheckEmailController
+dao/TaiKhoanDAO.java
+ dao.TaiKhoanDAO

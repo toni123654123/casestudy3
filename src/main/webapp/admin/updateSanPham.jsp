@@ -48,7 +48,7 @@
                 <tr>
                     <td style="float: right;"><b>Tên Sản Phẩm: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="TenSP" value= <%=request.getParameter("TenSP")%>></td>
+                    <td><input type="text" class="sedang" name="TenSP" value="<c:out value='${sp.tenSP}'/>"></td>
                 </tr>
                 <tr>
                     <td style="float: right;"><b>Mã Chuyên Mục: </b>
@@ -66,20 +66,20 @@
                 <tr>
                     <td style="float: right;"><b>Giá: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="Gia" value= <%=request.getParameter("Gia")%>></td>
+                    <td><input type="text" class="sedang" name="Gia" value="<c:out value='${sp.gia}'/>"></td>
                 </tr>
                 <tr>
                     <td style="float: right;"><b>Hình Ảnh: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="HinhAnh" value= <%=request.getParameter("HinhAnh")%>></td>
+                    <td><input type="text" class="sedang" name="HinhAnh" value="<c:out value='${sp.hinhAnh}'/>"></td>
                 </tr>
                 <tr>
                     <td>
                         <input type="hidden" name="command" value="update">
-<%--                        <c:if test="${sp !=null}">--%>
-<%--                            <input type="hidden" name="MaSP" value="<c:out value='${sp.MaSP}' />"/>--%>
-<%--                        </c:if>--%>
-                        <input type="hidden" name="MaSP" value= <%=request.getParameter("MaSP")%>>
+                        <c:if test="${sp !=null}">
+                            <input type="hidden" name="MaSP" value="<c:out value='${sp.maSP}' />"/>
+                        </c:if>
+<%--                        <input type="hidden" name="MaSP" value= <%=request.getParameter("MaSP")%>>--%>
                         <input type="submit" class="button" value="Lưu dữ liệu">
                     </td>
                 </tr>

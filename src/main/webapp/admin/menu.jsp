@@ -10,15 +10,13 @@
 	<ul>
 		<li><a href="HomeAdmin">Trang Chủ</a></li>
 <%--		<li><a href="ChiTietSanPhamQL">Chi Tiết SP</a></li>--%>
-		<li><a href="ChuyenMucQL">Danh Mục</a></li>
+
+		<li><a href="ChuyenMucQL">ChuyênMục</a></li>
 		<li><a href="SanPhamQL">Sản Phẩm</a></li>
 		<li><a href="KhoHangQL">Kho Hàng</a></li>
 		<li><a href="DonHangQL">Đơn Hàng</a></li>
 		<li><a href="ChiTietDonHangQL">Chi Tiết ĐH</a></li>
 		<li><a href="TaiKhoanQL">Tài Khoản</a></li>
-<%--		<li><a href="SlidebannerQL">Slidebanner</a></li>--%>
-<%--		<li><a href="SlidebannerlogoQL">Slidebannerlogo</a></li>--%>
-<%--		--%>
 	</ul>
 </div>
 </body>

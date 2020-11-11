@@ -5,10 +5,10 @@ public class ChuyenMuc{
 	private String TenCM;
 	public ChuyenMuc() {}
 	public ChuyenMuc(String maCM, String tenCM) {
-		MaCM = maCM;
-		TenCM = tenCM;
+		this.MaCM = maCM;
+		this.TenCM = tenCM;
 	}
-	
+
 	public String getMaCM() {
 		return MaCM;
 	}

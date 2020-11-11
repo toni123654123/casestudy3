@@ -3,6 +3,7 @@ package dao;
 
 import db.DBConnect;
 import model.ChuyenMuc;
+import model.SanPham;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -60,6 +61,25 @@ public static boolean update_ChuyenMuc(ChuyenMuc chuyenMuc) throws SQLException 
       return false;
  }
 }
+
+    public static ChuyenMuc selectChuyenMuc(String MaCM) {
+        ChuyenMuc cm1 = null;
+        Connection connection = DBConnect.CreateConnection();
+        String sql = "select  categories_id, categories_name from categories WHERE categories_id = ?";
+        try {
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1, MaCM);
+            System.out.println(ps);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                String TenCM = rs.getString("categories_name");
+                cm1 = new ChuyenMuc(MaCM,TenCM);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return cm1;
+    }
 
 //xóa
 public static boolean delete_ChuyenMuc(String MaCM) throws SQLException {

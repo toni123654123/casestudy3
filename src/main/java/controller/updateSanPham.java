@@ -1,6 +1,9 @@
 package controller;
 
 
+import dao.SanPhamDAO;
+import model.SanPham;
+
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
@@ -23,8 +26,14 @@ public class updateSanPham extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd =request.getRequestDispatcher("/admin/updateSanPham.jsp");
-		rd.forward(request, response);
+//		RequestDispatcher rd =request.getRequestDispatcher("/admin/updateSanPham.jsp");
+//		rd.forward(request, response);
+		String MaSP = request.getParameter("MaSP");
+		SanPham existingUser = SanPhamDAO.selectUser(MaSP);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/updateSanPham.jsp");
+		request.setAttribute("sp",existingUser);
+		dispatcher.forward(request,response);
+
 		response.setContentType("text/html;charset=UTF-8");
 	    request.setCharacterEncoding("UTF-8");
 	}

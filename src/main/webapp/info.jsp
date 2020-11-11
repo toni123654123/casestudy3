@@ -82,7 +82,7 @@ tk=(TaiKhoan) session.getAttribute("user");
 	<div class="container">
 		<div class="account">
 			<h2 class="account-in">Đăng ký</h2>
-				<form action="Update_Info" method="POST">
+				<form action="updateInfo" method="POST">
 				<div>
 				<span class="word">ID</span>
 				<br>

@@ -36,7 +36,6 @@ public class qlSanPham extends HttpServlet {
         String command = request.getParameter("command");
         String MaSP = request.getParameter("MaSP");
 
-
         String url = "";
         try {
 
@@ -46,7 +45,8 @@ public class qlSanPham extends HttpServlet {
                     url = "/SanPhamQL";
                     break;
 //                case "showedit":
-//                    SanPhamDAO.showEditForm(request,response);
+//                    showEditForm(request,response);
+//                    url="/SanPhamQL";
 //                    break;
 
             }
@@ -70,6 +70,7 @@ public class qlSanPham extends HttpServlet {
         String MaCM = request.getParameter("MaCM");
         String Gia = request.getParameter("Gia");
         String HinhAnh = request.getParameter("HinhAnh");
+
         String url = "";
         if (request.getParameter("MaSP") == "" || request.getParameter("Gia") == "") {
             HttpSession session = request.getSession();
@@ -121,5 +122,6 @@ public class qlSanPham extends HttpServlet {
 //        }
 //
 //    }
+
 
 }

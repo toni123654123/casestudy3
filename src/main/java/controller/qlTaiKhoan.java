@@ -69,6 +69,7 @@ public class qlTaiKhoan extends HttpServlet {
 		String SDT = request.getParameter("SDT");
 		String PhanLoai = request.getParameter("PhanLoai");
 		String url = "";
+
 		if(request.getParameter("ID")==""||request.getParameter("UserEmail")==""||request.getParameter("UserEmail")==""||request.getParameter("PhanLoai")=="") {
 			HttpSession session =request.getSession();
 			session.setAttribute("error","Các thông tin không được phép để trống");

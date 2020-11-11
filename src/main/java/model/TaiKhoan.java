@@ -1,5 +1,7 @@
 package model;
 
+import javax.persistence.Id;
+
 public class TaiKhoan
 {
 	private int ID;
@@ -11,8 +13,17 @@ public class TaiKhoan
 	private int PhanLoai;
 	public TaiKhoan() {}
 
+	public TaiKhoan(int ID, String userEmail, String pass, String hoTen, String gioiTinh, String SDT, int phanLoai) {
+		this.ID = ID;
+		UserEmail = userEmail;
+		Pass = pass;
+		HoTen = hoTen;
+		GioiTinh = gioiTinh;
+		this.SDT = SDT;
+		PhanLoai = phanLoai;
+	}
 
-	public TaiKhoan( String userEmail, String pass, String hoTen, String gioiTinh, String sDT, int phanLoai) {
+	public TaiKhoan(String userEmail, String pass, String hoTen, String gioiTinh, String sDT, int phanLoai) {
 
 		UserEmail = userEmail;
 		Pass = pass;

@@ -1,6 +1,7 @@
 <%@ page import="model.TaiKhoan" %>
 <%@ page language="java" contentType="text/html; charset=utf-8"
          pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,13 +23,6 @@
     if (session.getAttribute("error") != null) {
         s = (String) session.getAttribute("error");
     }
-    %>
-<%
-    TaiKhoan taiKhoan = null;
-    if (session.getAttribute("user") != null) {
-        taiKhoan = (TaiKhoan) session.getAttribute("user");
-    }
-
 %>
 <!-- header -->
 <jsp:include page="header.jsp"></jsp:include>
@@ -44,50 +38,43 @@
         <form action="qlTaiKhoan" method="POST">
 
             <table width="95%">
-<%--                <tr>--%>
-<%--                    <td style="float: right;"><b>ID: </b>--%>
-<%--                    </td>--%>
-<%--                    <td><input type="text" class="sedang" name="ID"--%>
-<%--                               value="<%=taiKhoan.getID() %>" readonly="readonly"></td>--%>
-<%--                </tr>--%>
                 <tr>
                     <td style="float: right;"><b>Email đăng nhập: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="UserEmail"
-                               value="<%=taiKhoan.getUserEmail() %>"></td>
+                    <td><input type="text" class="sedang" name="UserEmail" value="<c:out value='${tk.userEmail}'/>">
+                    </td>
                 </tr>
                 <tr>
                     <td style="float: right;"><b>Mật khẩu: </b>
                     </td>
                     <td>
-                        <input type="text" class="sedang" name="Pass"  value="<%=taiKhoan.getPass() %>">
+                        <input type="text" class="sedang" name="Pass" value="<c:out value='${tk.pass}'/>">
                     </td>
                 </tr>
 
                 <tr>
                     <td style="float: right;"><b>Họ tên: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="HoTen"  value="<%=taiKhoan.getHoTen() %>">
+                    <td><input type="text" class="sedang" name="HoTen" value="<c:out value='${tk.hoTen}'/>">
                     </td>
                 </tr>
                 <tr>
                     <td style="float: right;"><b>Giới tính: </b>
                     </td>
-                    <td><input type="radio" name="GioiTinh" value="Nam"  value="<%=taiKhoan.getGioiTinh() %>">Nam
-                        <input type="radio" name="GioiTinh" value="Nữ"  value="<%=taiKhoan.getGioiTinh() %>">Nữ
+                    <td><input type="radio" name="GioiTinh" value="Nam" value="<c:out value='${tk.gioiTinh}'/>">Nam
+                        <input type="radio" name="GioiTinh" value="Nữ" value="<c:out value='${tk.gioiTinh}'/>">Nữ
                     </td>
                 </tr>
                 <tr>
                     <td style="float: right;"><b>Số điện thoại: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="SDT"  value="<%=taiKhoan.getSDT() %>"></td>
+                    <td><input type="text" class="sedang" name="SDT" value="<c:out value='${tk.SDT}'/>"></td>
                     <td>
                 </tr>
                 <tr>
                     <td style="float: right;"><b>Phân loại: </b>
                     </td>
-                    <td><input type="text" class="sedang" name="PhanLoai"
-                               value="<%=taiKhoan.getPhanLoai() %>"></td>
+                    <td><input type="text" class="sedang" name="PhanLoai" value="<c:out value='${tk.phanLoai}'/>"></td>
                     <td>
                 </tr>
 
@@ -95,7 +82,9 @@
                     <td></td>
                     <td>
                         <input type="hidden" name="command" value="update">
-                        <input type="hidden" name="ID" value= <%=request.getParameter("ID")%>>
+                        <c:if test="${tk !=null}">
+                            <input type="hidden" name="ID"value="<c:out value='${tk.ID}' />">
+                        </c:if>
                         <input type="submit" class="button" value="Lưu dữ liệu">
 
                     </td>

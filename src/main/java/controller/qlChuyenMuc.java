@@ -66,7 +66,7 @@ public class qlChuyenMuc extends HttpServlet {
 		String maDanhMuc = request.getParameter("maDanhMuc");
 		String ma_CM = request.getParameter("ma_CM");
 		String url = "";
-		if(request.getParameter("tenDanhMuc")==""||request.getParameter("maDanhMuc")=="") {
+		if(request.getParameter("tenDanhMuc").equals("")||request.getParameter("maDanhMuc").equals("")) {
 			HttpSession session =request.getSession();
 			session.setAttribute("er","Các thông tin không được phép để trống");
 			url="/admin/addChuyenMuc.jsp";
