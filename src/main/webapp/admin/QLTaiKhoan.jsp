@@ -56,7 +56,7 @@
 				<td class="data"><%=tk.getPhanLoai()%></td>
 				<td class="data" width="75px">
 			<center>
-				<a href="Update_TaiKhoan?command=update&ID=<%=tk.getID()%>">Sửa</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+				<a href="updateTaiKhoan?command=update&ID=<%=tk.getID()%>">Sửa</a>&nbsp;&nbsp; | &nbsp;&nbsp;
 				<a href="qlTaiKhoan?command=delete&ID=<%=tk.getID()%>">Xóa</a>
 				</center>
 				</td>

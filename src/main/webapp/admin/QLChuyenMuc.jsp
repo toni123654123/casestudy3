@@ -54,7 +54,7 @@
 				<td class="data"><%=c.getTenCM()%></td>
 				<td class="data" width="75px">
 				<center>
-				<a href="Update_ChuyenMuc?command=update&ma_CM=<%=c.getMaCM()%>">Sửa</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+				<a href="updateChuyenMuc?command=update&ma_CM=<%=c.getMaCM()%>">Sửa</a>&nbsp;&nbsp; | &nbsp;&nbsp;
 				<a href="qlChuyenMuc?command=delete&ma_CM=<%=c.getMaCM() %>">Xóa</a>
 				</center>
 				</td>

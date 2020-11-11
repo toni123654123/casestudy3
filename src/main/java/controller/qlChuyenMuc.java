@@ -69,7 +69,7 @@ public class qlChuyenMuc extends HttpServlet {
 		if(request.getParameter("tenDanhMuc")==""||request.getParameter("maDanhMuc")=="") {
 			HttpSession session =request.getSession();
 			session.setAttribute("er","Các thông tin không được phép để trống");
-			url="/admin/themChuyenMuc.jsp";
+			url="/admin/addChuyenMuc.jsp";
 		}
 		else {
 		try  {
@@ -87,7 +87,7 @@ public class qlChuyenMuc extends HttpServlet {
 		 catch (Exception e) {
 			 HttpSession session =request.getSession();
 				session.setAttribute("error","");
-			 url="/admin/themChuyenMuc.jsp";
+			 url="/admin/addChuyenMuc.jsp";
 		}
 		}
 		

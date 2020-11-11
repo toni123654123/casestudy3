@@ -52,7 +52,7 @@
 				<td class="data"><%=sp.getHinhAnh()%></td>
 				<td class="data" width="75px">
 			<center>
-				<a href="Update_SanPham?command=update&MaSP=<%=sp.getMaSP()%>">Sửa</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+				<a href="updateSanPham?command=update&MaSP=<%=sp.getMaSP()%>">Sửa</a>&nbsp;&nbsp; | &nbsp;&nbsp;
 				<a href="qlSanPham?command=delete&MaSP=<%=sp.getMaSP() %>">Xóa</a>
 				</center>
 				</td>

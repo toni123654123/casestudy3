@@ -8,7 +8,7 @@
 <body>
 <div id="leftBar">
 	<ul>
-		<li><a href="indexql">Trang Chủ</a></li>
+		<li><a href="HomeAdmin">Trang Chủ</a></li>
 <%--		<li><a href="ChiTietSanPhamQL">Chi Tiết SP</a></li>--%>
 		<li><a href="ChuyenMucQL">Danh Mục</a></li>
 		<li><a href="SanPhamQL">Sản Phẩm</a></li>

@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 });
  
            function check_username_ajax(username) {
-                $("#user-result").html('<img src="img/ajax-loader.gif" />');
+                $("#user-result").html('<img src="images/ajax-loader.gif" />');
                 $.post('CheckEmailController', {'username': username}, function (data) {
                     $("#user-result").html(data);
                  });
@@ -83,11 +83,11 @@ tk=(TaiKhoan) session.getAttribute("user");
 		<div class="account">
 			<h2 class="account-in">Đăng ký</h2>
 				<form action="Update_Info" method="POST">
-<%--				<div>--%>
-<%--				<span class="word">ID</span>--%>
-<%--				<br>--%>
-<%--				<input type="text" name="id" value="<%=tk.getID() %>" readonly="readonly" >--%>
-<%--				</div>--%>
+				<div>
+				<span class="word">ID</span>
+				<br>
+				<input type="text" name="id" value="<%=tk.getID() %>" readonly="readonly" >
+				</div>
 		
 				<div>
 				
@@ -98,7 +98,8 @@ tk=(TaiKhoan) session.getAttribute("user");
 				<div> 
 						<span class="word">Giới Tính</span>
 				<br>
-					<input type="text" name="GioiTinh" value="<%=tk.getGioiTinh()%>">
+					<input type="radio" name="GioiTinh" value="<%=tk.getGioiTinh()%>">Nam
+					<input type="radio" name="GioiTinh" value="<%=tk.getGioiTinh()%>">Nữ
 				</div>
 					<div> 
 						<span class="word">Số Điện Thoại</span>

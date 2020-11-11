@@ -22,7 +22,7 @@ public class addTaiKhoan extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd =request.getRequestDispatcher("/admin/themTaiKhoan.jsp");
+		RequestDispatcher rd =request.getRequestDispatcher("/admin/addTaiKhoan.jsp");
 		rd.forward(request, response);
 		response.setContentType("text/html;charset=UTF-8");
 	    request.setCharacterEncoding("UTF-8");

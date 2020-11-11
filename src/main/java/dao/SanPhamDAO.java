@@ -131,7 +131,7 @@ try {
 //    private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
 //        int id = Integer.parseInt(request.getParameter("id"));
 //        SanPham existingUser = SanPhamDAO.selectUser(id);
-//        RequestDispatcher dispatcher = request.getRequestDispatcher("Update_SanPham");
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("updateSanPham");
 //        request.setAttribute("user",existingUser);
 //        try {
 //            dispatcher.forward(request,response);

@@ -43,7 +43,7 @@ public class RegisterController extends HttpServlet {
         } else {
                 TaiKhoan tk = new TaiKhoan();
                 tk.setUserEmail(request.getParameter("email"));
-                tk.setHoTen(request.getParameter("name"));
+//                tk.setHoTen(request.getParameter("name"));
 //                tk.getSDT(request.getParameter("phone")));
                 tk.setPass(request.getParameter("pass"));
                 tk.setPhanLoai(1);

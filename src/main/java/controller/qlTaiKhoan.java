@@ -72,7 +72,7 @@ public class qlTaiKhoan extends HttpServlet {
 		if(request.getParameter("ID")==""||request.getParameter("UserEmail")==""||request.getParameter("UserEmail")==""||request.getParameter("PhanLoai")=="") {
 			HttpSession session =request.getSession();
 			session.setAttribute("error","Các thông tin không được phép để trống");
-			url="/admin/themTaiKhoan.jsp";
+			url="/admin/addTaiKhoan.jsp";
 		}
 		else {
 		try  {
@@ -90,7 +90,7 @@ public class qlTaiKhoan extends HttpServlet {
 		 catch (Exception e) {
 			 HttpSession session =request.getSession();
 				session.setAttribute("error","ID đã tồn tại, vui lòng kiểm tra lại!");
-			 url="/admin/themTaiKhoan.jsp";
+			 url="/admin/addTaiKhoan.jsp";
 		}
 		}
 		

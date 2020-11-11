@@ -67,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
 
             function check_username_ajax(username) {
-                $("#user-result").html('<img src="img/ajax-loader.gif" />');
+                $("#user-result").html('<img src="images/ajax-loader.gif" />');
                 $.post('CheckEmailController', {'username': username}, function (data) {
                     $("#user-result").html(data);
                 });
@@ -108,18 +108,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <input type="text" name="email" id="email">
                 <span id="user-result"></span>
             </div>
-            <div>
-                <span class="word">HọTên*</span>
-                <br>
-                <input type="text" name="name" id="name">
-                <span></span>
-            </div>
-            <div>
-                <span class="word">Số điện thoại*</span>
-                <br>
-                <input type="number" name="phone" id="phone">
-                <span></span>
-            </div>
+<%--            <div>--%>
+<%--                <span class="word">HọTên*</span>--%>
+<%--                <br>--%>
+<%--                <input type="text" name="name" id="name">--%>
+<%--                <span></span>--%>
+<%--            </div>--%>
+<%--            <div>--%>
+<%--                <span class="word">Số điện thoại*</span>--%>
+<%--                <br>--%>
+<%--                <input type="number" name="phone" id="phone">--%>
+<%--                <span></span>--%>
+<%--            </div>--%>
             <div>
                 <span class="word">Mật khẩu*</span>
                 <br>

@@ -62,7 +62,7 @@ public class LoginController extends HttpServlet {
 				if(tk!=null && tk.getPhanLoai()==0)
 				{
 					session.setAttribute("user", tk);
-					url="/indexql";
+					url="/HomeAdmin";
 				}
 				else
 				{

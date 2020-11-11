@@ -74,7 +74,7 @@ public class qlSanPham extends HttpServlet {
         if (request.getParameter("MaSP") == "" || request.getParameter("Gia") == "") {
             HttpSession session = request.getSession();
             session.setAttribute("error", "Các thông tin không được phép để trống");
-            url = "/admin/themSanPham.jsp";
+            url = "/admin/addSanPham.jsp";
         } else {
             try {
                 switch (command) {
@@ -91,7 +91,7 @@ public class qlSanPham extends HttpServlet {
             } catch (Exception e) {
                 HttpSession session = request.getSession();
                 session.setAttribute("error", "Mã sản phẩm đã tồn tại, vui lòng kiểm tra lại!");
-                url = "/admin/themSanPham.jsp";
+                url = "/admin/addSanPham.jsp";
             }
         }
         RequestDispatcher rd = getServletContext().getRequestDispatcher(url);
@@ -110,7 +110,7 @@ public class qlSanPham extends HttpServlet {
 //        SanPham sanPham = new SanPham(MaSP, TenSP, MaCM, Gia, HinhAnh);
 //        try {
 //            SanPhamDAO.update_SanPham(sanPham);
-//            RequestDispatcher dispatcher = request.getRequestDispatcher("Update_SanPham.jsp");
+//            RequestDispatcher dispatcher = request.getRequestDispatcher("updateSanPham.jsp");
 //            dispatcher.forward(request, response);
 //        } catch (SQLException throwables) {
 //            throwables.printStackTrace();

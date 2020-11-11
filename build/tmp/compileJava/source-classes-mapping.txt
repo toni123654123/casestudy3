@@ -1,15 +1,15 @@
-controller/addTaiKhoan.java
- controller.addTaiKhoan
+model/Cart.java
+ model.Cart
 controller/ChuyenMucQL.java
  controller.ChuyenMucQL
-controller/addSanPham.java
- controller.addSanPham
+controller/CartController.java
+ controller.CartController
 controller/indexql.java
  controller.indexql
 controller/TaiKhoanQL.java
  controller.TaiKhoanQL
-controller/qlChuyenMuc.java
- controller.qlChuyenMuc
+model/SanPham.java
+ model.SanPham
 dao/TaiKhoanDAO.java
  dao.TaiKhoanDAO
 dao/ChiTietDonHangDAO.java
@@ -20,20 +20,20 @@ controller/HomeForward.java
  controller.HomeForward
 controller/SanPhamQL.java
  controller.SanPhamQL
-controller/addChuyenMuc.java
- controller.addChuyenMuc
+controller/updateSanPham.java
+ controller.updateSanPham
 dao/ChuyenMucDAO.java
  dao.ChuyenMucDAO
 model/ChiTietDonHang.java
  model.ChiTietDonHang
-controller/qlTaiKhoan.java
- controller.qlTaiKhoan
-controller/Update_ChuyenMuc.java
- controller.Update_ChuyenMuc
+controller/RegisterController.java
+ controller.RegisterController
+dao/SanPhamDAO.java
+ dao.SanPhamDAO
 model/DonHang.java
  model.DonHang
-controller/Update_SanPham.java
- controller.Update_SanPham
+controller/updateTaiKhoan.java
+ controller.updateTaiKhoan
 controller/DonHangQL.java
  controller.DonHangQL
 db/DBConnect.java
@@ -52,25 +52,25 @@ model/TaiKhoan.java
  model.TaiKhoan
 model/KhoHang.java
  model.KhoHang
-controller/Update_TaiKhoan.java
- controller.Update_TaiKhoan
+controller/updateChuyenMuc.java
+ controller.updateChuyenMuc
 dao/KhoHangDAO.java
  dao.KhoHangDAO
-controller/RegisterController.java
- controller.RegisterController
+controller/CheckoutController.java
+ controller.CheckoutController
 controller/LoginController.java
  controller.LoginController
 model/Items.java
  model.Items
-model/SanPham.java
- model.SanPham
-model/Cart.java
- model.Cart
-controller/CheckoutController.java
- controller.CheckoutController
+controller/addSanPham.java
+ controller.addSanPham
 controller/qlSanPham.java
  controller.qlSanPham
-dao/SanPhamDAO.java
- dao.SanPhamDAO
-controller/CartController.java
- controller.CartController
+controller/addChuyenMuc.java
+ controller.addChuyenMuc
+controller/qlTaiKhoan.java
+ controller.qlTaiKhoan
+controller/addTaiKhoan.java
+ controller.addTaiKhoan
+controller/qlChuyenMuc.java
+ controller.qlChuyenMuc

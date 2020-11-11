@@ -27,15 +27,13 @@ if(cart==null)
 	cart=new Cart();
 	session.setAttribute("cart", cart);
 	}
-
 %>
-
 	<div class="header">
 		<div class="header-top">
 			<div class="container">	
 			<div class="header-top-in">			
 				<div class="logo">
-					<a href="home.jsp"><img src="#" alt=" " ></a>
+					<a href="home.jsp"><img src="images/logo.jpg" alt="logo" width="100px" height="70px"></a>
 				</div>
 				<div class="header-in">
 					<ul class="icon1 sub-icon1">
