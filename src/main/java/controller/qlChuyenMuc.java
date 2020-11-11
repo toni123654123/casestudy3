@@ -64,7 +64,6 @@ public class qlChuyenMuc extends HttpServlet {
 		String command = request.getParameter("command");
 		String tenDanhMuc = request.getParameter("tenDanhMuc");
 		String maDanhMuc = request.getParameter("maDanhMuc");
-		String ma_CM = request.getParameter("ma_CM");
 		String url = "";
 		if(request.getParameter("tenDanhMuc").equals("")||request.getParameter("maDanhMuc").equals("")) {
 			HttpSession session =request.getSession();
@@ -79,7 +78,7 @@ public class qlChuyenMuc extends HttpServlet {
 				url = "/ChuyenMucQL";
 				break;
 				case "update":
-					ChuyenMucDAO.update_ChuyenMuc(new ChuyenMuc(tenDanhMuc,ma_CM));
+					ChuyenMucDAO.update_ChuyenMuc(new ChuyenMuc(maDanhMuc,tenDanhMuc));
 					url = "/ChuyenMucQL";
 					break;
 				}

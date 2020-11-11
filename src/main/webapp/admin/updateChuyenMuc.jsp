@@ -39,7 +39,7 @@
             <table width="95%">
 
                 <c:if test="${cm != null}">
-                    <input type="text" class="sedang" name="MaCM" value="<c:out value='${cm.maCM}' />" hidden="hidden">
+                    <input type="text" class="sedang" name="maDanhMuc" value="<c:out value='${cm.maCM}' />" hidden="hidden">
                 </c:if>
 
                 <tr>
@@ -52,7 +52,6 @@
                     <td></td>
                     <td>
                         <input type="hidden" name="command" value="update">
-                        <input type="hidden" name="ma_CM">
                         <input type="submit" class="button" value="Lưu dữ liệu">
 
                     </td>

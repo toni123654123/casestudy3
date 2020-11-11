@@ -2,8 +2,8 @@ controller/addSanPham.java
  controller.addSanPham
 controller/updateSanPham.java
  controller.updateSanPham
-controller/updateChuyenMuc.java
- controller.updateChuyenMuc
+controller/qlChuyenMuc.java
+ controller.qlChuyenMuc
 controller/ChuyenMucQL.java
  controller.ChuyenMucQL
 dao/SanPhamDAO.java
@@ -22,8 +22,8 @@ controller/addChuyenMuc.java
  controller.addChuyenMuc
 controller/HomeForward.java
  controller.HomeForward
-controller/qlChuyenMuc.java
- controller.qlChuyenMuc
+controller/qlTaiKhoan.java
+ controller.qlTaiKhoan
 model/DonHang.java
  model.DonHang
 controller/SanPhamQL.java
@@ -66,11 +66,11 @@ dao/ChiTietDonHangDAO.java
  dao.ChiTietDonHangDAO
 controller/updateInfo.java
  controller.updateInfo
-controller/qlTaiKhoan.java
- controller.qlTaiKhoan
+dao/TaiKhoanDAO.java
+ dao.TaiKhoanDAO
 controller/RegisterController.java
  controller.RegisterController
 controller/CheckEmailController.java
  controller.CheckEmailController
-dao/TaiKhoanDAO.java
- dao.TaiKhoanDAO
+controller/updateChuyenMuc.java
+ controller.updateChuyenMuc

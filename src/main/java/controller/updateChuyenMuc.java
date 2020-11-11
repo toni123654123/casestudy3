@@ -29,7 +29,7 @@ public class updateChuyenMuc extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String MaCM = request.getParameter("ma_CM");
+        String MaCM = request.getParameter("MaCM");
         ChuyenMuc existingUser = ChuyenMucDAO.selectChuyenMuc(MaCM);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/updateChuyenMuc.jsp");
         request.setAttribute("cm",existingUser);

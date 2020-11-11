@@ -61,7 +61,7 @@ public class qlTaiKhoan extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 	    request.setCharacterEncoding("UTF-8");
 		String command = request.getParameter("command");
-//		String ID = request.getParameter("ID");
+		int ID = Integer.parseInt(request.getParameter("ID"));
 		String UserEmail = request.getParameter("UserEmail");
 		String Pass = request.getParameter("Pass");
 		String HoTen = request.getParameter("HoTen");
@@ -70,7 +70,7 @@ public class qlTaiKhoan extends HttpServlet {
 		String PhanLoai = request.getParameter("PhanLoai");
 		String url = "";
 
-		if(request.getParameter("ID")==""||request.getParameter("UserEmail")==""||request.getParameter("UserEmail")==""||request.getParameter("PhanLoai")=="") {
+		if(request.getParameter("ID").equals("")||request.getParameter("UserEmail").equals("")||request.getParameter("Pass").equals("")||request.getParameter("PhanLoai").equals("")) {
 			HttpSession session =request.getSession();
 			session.setAttribute("error","Các thông tin không được phép để trống");
 			url="/admin/addTaiKhoan.jsp";
@@ -83,7 +83,7 @@ public class qlTaiKhoan extends HttpServlet {
 				url = "/TaiKhoanQL";
 				break;
 				case "update":
-					TaiKhoanDAO.update_TaiKhoan(new TaiKhoan(UserEmail,Pass,HoTen,GioiTinh,SDT,Integer.parseInt(PhanLoai)));
+					TaiKhoanDAO.update_TaiKhoan(new TaiKhoan(ID,UserEmail,Pass,HoTen,GioiTinh,SDT,Integer.parseInt(PhanLoai)));
 					url = "/TaiKhoanQL";
 					break;
 				}
