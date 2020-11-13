@@ -108,10 +108,9 @@ String MaSP="";
 					<div class="col-md-5 single-top">
 						<ul id="etalage">
 							<li>
-								<a href="optionallink.jsp">
-									<img class="etalage_thumb_image img-responsive" src="webapp/images/<%=sp.getHinhAnh() %>" alt="" >
-									<img class="etalage_source_image img-responsive" src="webapp/images/<%=sp.getHinhAnh() %>" alt="" >
-								</a>
+
+									<img class="etalage_thumb_image img-responsive" src="/images/<%=sp.getHinhAnh() %>" alt="" >
+<%--									<img class="etalage_source_image img-responsive" src="webapp/images/<%=sp.getHinhAnh() %>" alt="" >--%>
 							</li>
 						
 						</ul>

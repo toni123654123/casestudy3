@@ -3,6 +3,7 @@
 <%@ page import="model.SanPham" %>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,7 +91,7 @@ String MaCM="";
 					%>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="single.jsp?MaSP=<%=sp.getMaSP()%>"><img  src="images/<%=sp.getHinhAnh() %>" alt="" width="425" height="300"/></a>
+								<a href="single.jsp?MaSP=<%=sp.getMaSP()%>"><img  src="/images/<%=sp.getHinhAnh() %>" alt="" width="425" height="300"/></a>
 								<div class="top-content">
 									<center><h5><a href="single.jsp?MaSP=<%=sp.getMaSP()%>"><%=sp.getTenSP() %></a></h5></center>
 									<div class="white">

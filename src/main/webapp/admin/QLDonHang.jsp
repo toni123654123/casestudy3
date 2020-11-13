@@ -45,8 +45,10 @@
 		<table class="data">
 			<tr class="data">
 				<th class="data" width="30px">STT</th>
-				<th class="data">MaDH</th>
-				<th class="data">ID</th>
+				<th class="data">Mã Hoá Đơn</th>
+				<th class="data">Họ tên</th>
+				<th class="data">Số điện thoại</th>
+				<th class="data">Địa Chỉ Nhận</th>
 				<th class="data">Tổng Tiền</th>
 			</tr>
 			<% int i=1;
@@ -55,7 +57,9 @@
 				<tr class="data">
 				<td class="data" width="30px"><%=i++%></td>
 				<td class="data"><%=dh.getMaDH()%></td>
-				<td class="data"><%=dh.getID()%></td>
+				<td class="data"><%=dh.getTen()%></td>
+				<td class="data"><%=dh.getSDT()%></td>
+				<td class="data"><%=dh.getDiaChiNhan()%></td>
 				<td class="data"><%=dh.getTongTien()%></td>
 				<td class="data" width="75px">
 				<center>

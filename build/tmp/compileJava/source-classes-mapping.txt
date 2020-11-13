@@ -24,8 +24,8 @@ controller/HomeForward.java
  controller.HomeForward
 controller/qlTaiKhoan.java
  controller.qlTaiKhoan
-model/DonHang.java
- model.DonHang
+controller/updateChiTietSanPham.java
+ controller.updateChiTietSanPham
 controller/SanPhamQL.java
  controller.SanPhamQL
 controller/TaiKhoanQL.java
@@ -52,12 +52,12 @@ controller/KhoHangQL.java
  controller.KhoHangQL
 model/ChuyenMuc.java
  model.ChuyenMuc
-controller/CheckoutController.java
- controller.CheckoutController
+dao/ChiTietSPDAO.java
+ dao.ChiTietSPDAO
 model/TaiKhoan.java
  model.TaiKhoan
-dao/DonHangDAO.java
- dao.DonHangDAO
+controller/qlChiTietSanPham.java
+ controller.qlChiTietSanPham
 controller/LoginController.java
  controller.LoginController
 controller/updateTaiKhoan.java
@@ -80,9 +80,9 @@ controller/addChiTietSanPham.java
  controller.addChiTietSanPham
 model/ChiTietSanPham.java
  model.ChiTietSanPham
-controller/updateChiTietSanPham.java
- controller.updateChiTietSanPham
-dao/ChiTietSPDAO.java
- dao.ChiTietSPDAO
-controller/qlChiTietSanPham.java
- controller.qlChiTietSanPham
+model/DonHang.java
+ model.DonHang
+dao/DonHangDAO.java
+ dao.DonHangDAO
+controller/CheckoutController.java
+ controller.CheckoutController

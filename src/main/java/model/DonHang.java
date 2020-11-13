@@ -4,14 +4,18 @@ public class DonHang{
 
 	private String MaDH;
 	private int ID;
+	private String Ten;
+	private int SDT;
 	private long TongTien;
 	private String DiaChiNhan;
 
-	public DonHang(String maDH, int iD, long tongTien, String diachinhan) {
+	public DonHang(String maDH, int ID, String ten, int SDT, long tongTien, String diaChiNhan) {
 		MaDH = maDH;
-		ID = iD;
+		this.ID = ID;
+		Ten = ten;
+		this.SDT = SDT;
 		TongTien = tongTien;
-		DiaChiNhan=diachinhan;
+		DiaChiNhan = diaChiNhan;
 	}
 
 	public DonHang() {
@@ -42,7 +46,20 @@ public class DonHang{
 	public void setDiaChiNhan(String diaChiNhan) {
 		DiaChiNhan = diaChiNhan;
 	}
-	
-	
-	
+
+	public String getTen() {
+		return Ten;
+	}
+
+	public void setTen(String ten) {
+		Ten = ten;
+	}
+
+	public int getSDT() {
+		return SDT;
+	}
+
+	public void setSDT(int SDT) {
+		this.SDT = SDT;
+	}
 }

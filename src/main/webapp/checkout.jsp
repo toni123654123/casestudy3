@@ -114,8 +114,15 @@ response.sendRedirect("/login.jsp");
 		<div class="account">
 			<h2 class="account-in">Thanh Toán</h2>
 				<form action="CheckoutController" method="POST">
-			
-				<div>
+					<div>
+						<span class="word">Họ và tên *</span>
+						<input type="text" name="name">
+					</div>
+					<div>
+						<span class="word">Số điện thoại *</span>
+						<input type="text" name="phone">
+					</div>
+					<div>
 					<span class="word">Địa chỉ *</span>
 					<input type="text" name="address">
 				</div> 	
