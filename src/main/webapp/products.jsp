@@ -90,9 +90,9 @@ String MaCM="";
 					%>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href=".jsp?MaSP=<%=sp.getMaSP()%>"><img  src="images/<%=sp.getHinhAnh() %>" alt="" width="425" height="300"/></a>
+								<a href="single.jsp?MaSP=<%=sp.getMaSP()%>"><img  src="images/<%=sp.getHinhAnh() %>" alt="" width="425" height="300"/></a>
 								<div class="top-content">
-									<center><h5><a href="productdetails.jsp?MaSP=<%=sp.getMaSP()%>"><%=sp.getTenSP() %></a></h5></center>
+									<center><h5><a href="single.jsp?MaSP=<%=sp.getMaSP()%>"><%=sp.getTenSP() %></a></h5></center>
 									<div class="white">
 									<p class="dollar"><span class="in-dollar"><%=sp.getGia() %></span><span>Đ</span></p>
 										<a href="CartController?command=plus&MaSP=<%=sp.getMaSP()%>" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">Add To Cart</a>	

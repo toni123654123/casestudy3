@@ -1,21 +1,21 @@
 controller/addSanPham.java
  controller.addSanPham
-controller/updateSanPham.java
- controller.updateSanPham
+controller/CheckEmailController.java
+ controller.CheckEmailController
 controller/qlChuyenMuc.java
  controller.qlChuyenMuc
 controller/ChuyenMucQL.java
  controller.ChuyenMucQL
-dao/SanPhamDAO.java
- dao.SanPhamDAO
+controller/RegisterController.java
+ controller.RegisterController
 dao/KhoHangDAO.java
  dao.KhoHangDAO
 model/Cart.java
  model.Cart
 model/KhoHang.java
  model.KhoHang
-controller/CartController.java
- controller.CartController
+dao/TaiKhoanDAO.java
+ dao.TaiKhoanDAO
 controller/HomeAdmin.java
  controller.HomeAdmin
 controller/addChuyenMuc.java
@@ -38,8 +38,8 @@ model/Items.java
  model.Items
 controller/addTaiKhoan.java
  controller.addTaiKhoan
-controller/qlSanPham.java
- controller.qlSanPham
+controller/updateChuyenMuc.java
+ controller.updateChuyenMuc
 controller/ChiTietDonHangQL.java
  controller.ChiTietDonHangQL
 controller/DonHangQL.java
@@ -66,11 +66,23 @@ dao/ChiTietDonHangDAO.java
  dao.ChiTietDonHangDAO
 controller/updateInfo.java
  controller.updateInfo
-dao/TaiKhoanDAO.java
- dao.TaiKhoanDAO
-controller/RegisterController.java
- controller.RegisterController
-controller/CheckEmailController.java
- controller.CheckEmailController
-controller/updateChuyenMuc.java
- controller.updateChuyenMuc
+controller/CartController.java
+ controller.CartController
+controller/updateSanPham.java
+ controller.updateSanPham
+dao/SanPhamDAO.java
+ dao.SanPhamDAO
+controller/qlSanPham.java
+ controller.qlSanPham
+controller/ChiTietSanPhamQL.java
+ controller.ChiTietSanPhamQL
+controller/addChiTietSanPham.java
+ controller.addChiTietSanPham
+model/ChiTietSanPham.java
+ model.ChiTietSanPham
+controller/updateChiTietSanPham.java
+ controller.updateChiTietSanPham
+dao/ChiTietSPDAO.java
+ dao.ChiTietSPDAO
+controller/qlChiTietSanPham.java
+ controller.qlChiTietSanPham

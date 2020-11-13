@@ -57,7 +57,7 @@
                         <%
                             for (ChuyenMuc cm : ChuyenMucDAO.getListChuyenMuc()) {
                         %>
-                        <option value="<%=cm.getMaCM()%>"><%=cm.getMaCM()%>
+                        <option value="<%=cm.getMaCM()%>"><%=cm.getTenCM()%>
                         </option>
                         <%} %>
                     </select></td>

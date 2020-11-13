@@ -142,7 +142,7 @@ try {
                 String MaCM = rs.getString("categories_id");
                 long Gia = rs.getLong("pince");
                 String HinhAnh = rs.getString("image");
-                sp = new SanPham(MaSP, TenSP, MaCM,Gia, HinhAnh);
+                sp = new SanPham(MaSP,  TenSP, MaCM,Gia, HinhAnh);
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();

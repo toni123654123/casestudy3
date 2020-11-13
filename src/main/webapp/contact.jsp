@@ -71,10 +71,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-6 contact-top">
 					<h3>Thông tin</h3>
 					<div class="map">
-						<iframe src="https://www.google.com/maps/@10.8509624,106.771661,16z"	></iframe>
+						<iframe src="https://faceworks.vn/wp-content/uploads/2017/06/QUYTRINHCHAMSOCKHACHHANG.png"></iframe>
 					</div>
-					
-					<p>Chúng tôi cho là xứng đáng với họ, và họ đang cáo buộc những người ghét người công bình, Nhưng, trong sự thật, và những lời xu nịnh của niềm vui accusantium của họ đối phó bại hoại của những nỗi đau, cũng cho đó ông trình bày, </p>
 					<p>Nhưng điều này đòi hỏi một sự phân biệt đơn giản và dễ dàng. Đối với thời gian rảnh rỗi của bạn, và họ là độc lập và khi không can thiệp với bởi nó không được như vậy, mà đối với chúng tôi là lựa chọn của lựa chọn một</p>				
 					<ul class="social ">
 						<li><span><i > </i>Địa chỉ:</span></li>
@@ -82,26 +80,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a><i class="mes"> </i>Email:</a></li>
 					</ul>
 				</div>
-<%--				<div class="col-md-6 contact-top">--%>
-<%--					<h3>Ban muốn làm việc với tôi?</h3>--%>
-<%--						<div>--%>
-<%--							<span>Tên của bạn </span>		--%>
-<%--							<input type="text" value="" >						--%>
-<%--						</div>--%>
-<%--						<div>--%>
-<%--							<span>Email của bạn </span>		--%>
-<%--							<input type="text" value="" >						--%>
-<%--						</div>--%>
-<%--						<div>--%>
-<%--							<span>Vấn đề</span>		--%>
-<%--							<input type="text" value="" >	--%>
-<%--						</div>--%>
-<%--						<div>--%>
-<%--							<span>Tin nhắn của bạn</span>		--%>
-<%--							<textarea> </textarea>	--%>
-<%--						</div>--%>
-<%--						<input type="submit" value="Gửi" >	--%>
-<%--				</div>--%>
 			<div class="clearfix"> </div>
 		</div>
 	</div>

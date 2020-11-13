@@ -58,8 +58,8 @@
 				<td class="data"><%=kh.getGhiChu() %></td>
 				<td class="data" width="75px">
 				<center>
-				<a href="#"><img src="mos-css/img/oke.png"></a>;
-				<a href="#"><img src="mos-css/img/detail.png"></a>
+				<a href="#"><img src="mos-css/img/"></a>;
+				<a href="#"><img src="mos-css/img/"></a>
 				</center>
 				</td>
 			

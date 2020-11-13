@@ -77,25 +77,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 <body>
-<%--<%--%>
-<%--TaiKhoan tk=null;--%>
-<%--if(session.getAttribute("user")!=null){--%>
-<%--tk=(TaiKhoan) session.getAttribute("user");--%>
-<%--}--%>
-<%--String s="";--%>
-<%--if(session.getAttribute("error")!=null)--%>
-<%--{--%>
-<%--	s=(String) session.getAttribute("error");--%>
-<%--	}--%>
-<%--%>--%>
-<%--<%--%>
-<%--	String s="";--%>
-<%--	if(session.getAttribute("e")!=null)--%>
-<%--	{--%>
-<%--		s=(String) session.getAttribute("e");--%>
-<%--	}--%>
-<%--%>--%>
-<!--header-->
 <jsp:include page="header.jsp"></jsp:include>
 
 <div class="container">
@@ -108,18 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <input type="text" name="email" id="email">
                 <span id="user-result"></span>
             </div>
-<%--            <div>--%>
-<%--                <span class="word">HọTên*</span>--%>
-<%--                <br>--%>
-<%--                <input type="text" name="name" id="name">--%>
-<%--                <span></span>--%>
-<%--            </div>--%>
-<%--            <div>--%>
-<%--                <span class="word">Số điện thoại*</span>--%>
-<%--                <br>--%>
-<%--                <input type="number" name="phone" id="phone">--%>
-<%--                <span></span>--%>
-<%--            </div>--%>
+
             <div>
                 <span class="word">Mật khẩu*</span>
                 <br>

@@ -44,10 +44,6 @@ public class qlSanPham extends HttpServlet {
                     SanPhamDAO.delete_SanPham(MaSP);
                     url = "/SanPhamQL";
                     break;
-//                case "showedit":
-//                    showEditForm(request,response);
-//                    url="/SanPhamQL";
-//                    break;
 
             }
 
@@ -100,28 +96,6 @@ public class qlSanPham extends HttpServlet {
 
     }
 
-//    private void updateSanPham(HttpServletRequest request, HttpServletResponse response) {
-//
-//        String MaSP = request.getParameter("MaSP");
-//        String TenSP = request.getParameter("TenSP");
-//        String MaCM = request.getParameter("MaCM");
-//        String Gia = request.getParameter("Gia");
-//        String HinhAnh = request.getParameter("HinhAnh");
-//
-//        SanPham sanPham = new SanPham(MaSP, TenSP, MaCM, Gia, HinhAnh);
-//        try {
-//            SanPhamDAO.update_SanPham(sanPham);
-//            RequestDispatcher dispatcher = request.getRequestDispatcher("updateSanPham.jsp");
-//            dispatcher.forward(request, response);
-//        } catch (SQLException throwables) {
-//            throwables.printStackTrace();
-//        } catch (ServletException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
 
 
 }

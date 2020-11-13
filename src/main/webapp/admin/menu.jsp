@@ -9,8 +9,7 @@
 <div id="leftBar">
 	<ul>
 		<li><a href="HomeAdmin">Trang Chủ</a></li>
-<%--		<li><a href="ChiTietSanPhamQL">Chi Tiết SP</a></li>--%>
-
+		<li><a href="ChiTietSanPhamQL">Chi Tiết SP</a></li>
 		<li><a href="ChuyenMucQL">ChuyênMục</a></li>
 		<li><a href="SanPhamQL">Sản Phẩm</a></li>
 		<li><a href="KhoHangQL">Kho Hàng</a></li>
